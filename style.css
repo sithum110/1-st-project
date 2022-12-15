@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    position: fixed;
+    background: white;
+    height: 80px;
+    width: 100%;
+
+}
+label.logo{
+    color: darkorange;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+nav ul li a.join{
+    border: none;
+    padding: 10px;
+    background: darkgray;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color: darkorange;
+   border-radius: 5px;
+}
+.checkbtn{
+    float: left;
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+/*responsive part */
+@media(max-width:1200px){
+    lable .logo{
+        font-size: 30px;
+        padding: 50px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+@media(max-width:795px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        background: white;
+        width: 300px;
+        border: none;
+        height: 70vh;
+        top: 80px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        color: darkorange;
+
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+
+    .sec3 .spec{
+        display: grid;
+        width: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+     }
+    
+     .spec{
+         padding-top: 50px;
+     }
+     .spec p{
+         text-align: center;
+        
+     }
+    
+    
+     
+     
+}
+/*responsive part end */
+
+.sec2 {
+    height: 100vh;
+   background: url(images/bc5.jpeg);
+    background-size: cover;
+   background-attachment: fixed;
+
+   text-align: center;
+   padding-top: 500px;
+   color: azure;
+   
+    
+    
+}
+.sec2 h1  {
+    
+    font-size: 50px;
+    color: rgb(255, 240, 240);
+    text-align: center;
+    
+    
+}
+.sec2 p{
+    text-align: center;
+  
+    font-size: 17px;
+    color: aliceblue;
+}
+
+
+.sec3{
+    width: 100%;
+    height: 700px;
+    background: #181717;
+    text-align: center;
+    color: azure;
+}
+.sec3 h1{
+    font-size: 40px;
+    padding-top: 100px;
+}
+.sec3 .spec{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 40px;
+   
+}
+.spec .pic img{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 200px;
+}
+.spec .special p{
+    height: 100px;
+}
+.spec{
+    padding-top: 100px;
+}
+.spec p{
+    text-align: center;
+   
+}
+
+.sec4{
+    height: 100vh;
+    background-image: url(images/bc6.jpeg);
+    background-size: cover;
+   background-attachment: fixed;
+
+   text-align: center;
+   padding-top: 500px;
+   color: azure;
+}
+
+
+.sec5{
+     width: 100%;
+    height: 700px;
+    background: #181717;
+    text-align: center;
+    color: azure;
+   
+}
+.sec6{
+    height: 100vh;
+    background-image: url(images/bc8.jpeg);
+    background-size: cover;
+   background-attachment: fixed;
+
+   text-align: center;
+   padding-top: 500px;
+   color: azure;
+
+}
+.sec7{
+     width: 100%;
+    height: 700px;
+    background: black;
+    text-align: center;
+    color: gray;
+}
+.item{
+    border: none;
+    background: rgb(121, 125, 126);
+    border-radius: 20px;
+    height: 200px;
+}    
+.sec6 .griid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+    
+}
+.sec5{
+    padding-top: 400px;
+}
+.sec7{
+    padding-top: 100px;
+}
+.sec7 .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr ;
+    grid-column-gap: 2px;
+    grid-template-areas: 
+"a a a a"
+"b c d e"
+"f f f f";
+    
+   
+}
+.num{
+   
+    padding: 20px;
+    border: none;
+    height: 200px;
+}
+.r1{
+    grid-area: a;
+}
+.r2{
+    grid-area: b;
+}
+.r3{
+    grid-area: c;
+
+}
+.r4{
+    grid-area: d;
+}
+.r5{
+    grid-area: e;
+}
+.r6{
+    grid-area: f;
+    padding-top: 160px;
+}
+.r1 .social-link{
+    padding-top: 50px;
+
+}
+.r1 .social-link a{
+    color: gray;
+}
+i{
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    font-size: 50px;
+    
+}
+.r3 ul {
+    list-style: none;
+}
+.r3 ul li a{
+    text-decoration: none;
+    color: gray;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
